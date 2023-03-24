@@ -20,30 +20,19 @@ Create the Contacts DataFrame
 Create the Crowdfunding Database
 
 ### Create the Category and Subcategory DataFrames
-Extract and transform the crowdfunding.xlsx Excel data to create a category DataFrame that has the following columns:
+####Extract and transform the crowdfunding.xlsx Excel data to create a category DataFrame that has the following columns:
 
 A "category_id" column that has entries going sequentially from "cat1" to "catn", where n is the number of unique categories
 
-A "category" column that contains only the category titles
-
-The following image shows this category DataFrame:
-
-image.png
-
-category DataFrame
+A "category" column that contains only the category titles.
 Export the category DataFrame as category.csv and save it to your GitHub repository.
 
-Extract and transform the crowdfunding.xlsx Excel data to create a subcategory DataFrame that has the following columns:
+####Extract and transform the crowdfunding.xlsx Excel data to create a subcategory DataFrame that has the following columns:
 
 A "subcategory_id" column that has entries going sequentially from "subcat1" to "subcatn", where n is the number of unique subcategories
 
 A "subcategory" column that contains only the subcategory titles
 
-The following image shows this subcategory DataFrame:
-
-image.png
-
-subcategory DataFrame
 Export the subcategory DataFrame as subcategory.csv and save it to your GitHub repository.
 
 ### Create the Campaign DataFrame
@@ -77,11 +66,6 @@ The "category_id" column, with unique identification numbers matching those in t
 
 The "subcategory_id" column, with the unique identification numbers matching those in the "subcategory_id" column of the subcategory DataFrame
 
-The following image shows this campaign DataFrame:
-
-image.png
-
-campaign DataFrame
 Export the campaign DataFrame as campaign.csv and save it to your GitHub repository.
 
 ### Create the Contacts DataFrame
@@ -104,10 +88,8 @@ Clean and export the DataFrame as contacts.csv and save it to your GitHub reposi
 
 Import the contacts.xlsx file into a DataFrame. Extract the "contact_id", "name", and "email" columns by using regular expressions. Create a new DataFrame with the extracted data. Convert the "contact_id" column to the integer type. Split each "name" column value into a first and a last name, and place each in a new column. Clean and then export the DataFrame as contacts.csv and save it to your GitHub repository. Check that your final DataFrame resembles the one in the following image:
 
-image.png
 
-final contact DataFrame
-Create the Crowdfunding Database
+### Create the Crowdfunding Database
 Inspect the four CSV files, and then sketch an ERD of the tables by using QuickDBDLinks to an external site..
 
 Use the information from the ERD to create a table schema for each CSV file.
@@ -126,24 +108,10 @@ Import each CSV file into its corresponding SQL table.
 
 Verify that each table has the correct data by running a SELECT statement for each.
 
-### Hints
-To split each "category & sub-category" column value into "category" and "subcategory" column values, use df[["new_column1","new_column2"]] = df["column"].str.split(). Make sure to pass the correct parameters to the split() function.
-
-To get the unique category and subcategory values from the "category" and "subcategory" columns, create a NumPy array where the array length equals the number of unique categories and unique subcategories from each column. For information about how to do so, see numpy.arangeLinks to an external site. in the NumPy documentation.
-
-To create the category and subcategory identification numbers, use a list comprehension to add the "cat" string or the "subcat" string to each number in the category or the subcategory array, respectively.
-
-For more information about creating a new Pandas DataFrame, see the pandas.DataFrameLinks to an external site. in the Pandas documentation.
-
-To convert the "goal" and "pledged" columns to the float data type, use the astype() method.
-
-To convert the "launch_date" and "end_date" UTC times to the datetime format, see the Transform_Grocery_Orders_Solved.ipynb activity solution.
-
-For more information about how to add the "category_id" and "subcategory_id" unique identification numbers to the campaign DataFrame, see the pandas.DataFrame.mergeLinks to an external site. in the Pandas documentation.
 
 ## Contributing Members
 Kudirat Abdulsalam, John Cuevas Gonzalez.
 Note: My code is slightly different from my partner's.
 
 # Reference
-Jason Lepelmeier,(2023, Mar 23). Class lecture: Project 2 and ETL 13.1 - Extract, Transfor, Load. Data Analytics and Visualization Bootcamp. https://umn.bootcampcontent.com/University-of-Minnesota-Boot-Camp/UofM-VIRT-DATA-PT-12-2022-U-LOLC/-/blob/main/13-Project-2-ETL/1/13.1%20Extract%2C%20Transform%2C%20Load.pdf
+Jason Lepelmeier,(2023, Mar 23). Class lecture: Project 2 and ETL 13.1 - Extract, Transform, Load. Data Analytics and Visualization Bootcamp. https://umn.bootcampcontent.com/University-of-Minnesota-Boot-Camp/UofM-VIRT-DATA-PT-12-2022-U-LOLC/-/blob/main/13-Project-2-ETL/1/13.1%20Extract%2C%20Transform%2C%20Load.pdf
