@@ -5,10 +5,10 @@
 The purpose of this project is to build ETL pipeline using Python, Pandas, and either Python dictionary methods or regular expressions to extract and transform data. After transforming the data, create four CSV files and use the files data to create an ERD and a table schema and upload the CSV file date into a Postgres database.
 
 ## Technologies
-Python
-Pandas
-Jupyter notebook
-Postgres Database
+Python,
+Pandas,
+Jupyter notebook,
+Postgres Database.
 
 
 ## Instruction:
