@@ -143,7 +143,7 @@ For more information about how to add the "category_id" and "subcategory_id" uni
 
 ## Contributing Members
 Kudirat Abdulsalam, John Cuevas Gonzalez.
-Note: My code is slightly different fr4om my partner.
+Note: My code is slightly different from my partner's.
 
 # Reference
 Jason Lepelmeier,(2023, Mar 23). Class lecture: Project 2 and ETL 13.1 - Extract, Transfor, Load. Data Analytics and Visualization Bootcamp. https://umn.bootcampcontent.com/University-of-Minnesota-Boot-Camp/UofM-VIRT-DATA-PT-12-2022-U-LOLC/-/blob/main/13-Project-2-ETL/1/13.1%20Extract%2C%20Transform%2C%20Load.pdf
